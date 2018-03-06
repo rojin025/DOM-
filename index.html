@@ -24,6 +24,9 @@
     <ul>
       <li id="bolded"> List Item 2</li>
       <li id="bolded"> List Item 3</li>
+      <li id="bolded"> List Item 3</li>
+      <li id="bolded"> List Item 3</li>
+      <li id="bolded"> List Item 3</li>
     </ul>
   </body>
 </html>
@@ -44,6 +47,15 @@ document.addEventListener("click",function (){
 	alert("UL clicked");
 });
 undefined
+__TO SELECT AND CHANGE THE COLORS OF SELECTED LIST__
 
-
+var lis = document.querySelectorAll("li");
+undefined
+lis
+NodeList(5) [li#bolded, li#bolded, li#bolded, li#bolded, li#bolded]
+for (var i = 0; i < lis.length; i ++){
+	lis[i].addEventListener("click", function() {
+		this.style.color = "red";
+	});
+}
 -->
