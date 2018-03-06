@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Practise</title>
+    <style media="screen">
+      .red {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>To Do List</h1>
+    <h2>
+      <ul>
+        <li>"/"New/" - Add A Todo"</li>
+        <li>"/"List/" - List All Todos"</li>
+        <li>"/"Quit/" - Quit App"</li>
+      </ul>
+    </h2> -->
+    <h1>Title</h1>
+    <h1>home</h1>
+    <button>CLick Me!</button>
+    <script src="js/script.js">
+    </script>
+    <p>NO ONE HAS CLICKED ME!</p>
+    <hr>
+    <p id="first" class="special"> hello</p>
+    <ul>
+      <li id="bolded"> List Item 2</li>
+      <li id="bolded"> List Item 3</li>
+      <li id="bolded"> List Item 3</li>
+      <li id="bolded"> List Item 3</li>
+      <li id="bolded"> List Item 3</li>
+    </ul>
+  </body>
+</html>
+<!-- notes Done in Console
+var button = document.querySelector("button");
+undefined
+var paragraph = document.querySelector("p");
+undefined
+button.addEventListener("click", function(){)
+VM285:1 Uncaught SyntaxError: Unexpected token )
+button.addEventListener("click", function(){ paragraph.textContent = "Someone Clicked the Button!";});
+
+var x = document.querySelector("ul");
+undefined
+x
+<ul>​…​</ul>​<li id=​"bolded">​ List Item 2​</li>​<li id=​"bolded">​ List Item 3​</li>​</ul>​
+document.addEventListener("click",function (){
+	alert("UL clicked");
+});
+undefined
+__TO SELECT AND CHANGE THE COLORS OF SELECTED LIST__
+
+var lis = document.querySelectorAll("li");
+undefined
+lis
+NodeList(5) [li#bolded, li#bolded, li#bolded, li#bolded, li#bolded]
+for (var i = 0; i < lis.length; i ++){
+	lis[i].addEventListener("click", function() {
+		this.style.color = "red";
+	});
+}
+-->
