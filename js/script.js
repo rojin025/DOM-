@@ -4,6 +4,7 @@ var resetButton = document.getElementById("reset");
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
 var winingScoreDisplay = document.querySelector("p span");
+var winSet =
 var p1Score = 0;
 var p2Score = 0;
 var winScore = 5;
@@ -19,7 +20,6 @@ p1Click.addEventListener("click", function(){
       p1Display.classList.add("winner");
     };
     p1Display.textContent = p1Score;
-
   };
 });
 
@@ -27,18 +27,17 @@ p1Click.addEventListener("click", function(){
 p2Click.addEventListener("click", function() {
     if(!gameOver){
       p2Score++;
-      p2Display.textContent = p2Score;
       console.log(p2Score);
       if(p2Score === winScore){
         gameOver = true;
         console.log("gameOver");
         p2Display.classList.add("winner");
       };
+      p2Display.textContent = p2Score;
     };
   });
 
 resetButton.addEventListener("click", function(){
-    console.log("inside reset")
     reset();
   });
 
