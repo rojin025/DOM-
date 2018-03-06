@@ -1,9 +1,11 @@
 var p1Click = document.querySelector("#p1");
 var p2Click = document.getElementById("p2");
-var p1Score = 0;
-var p2Score = 0;
+var resetClick = document.getElementById("reset");
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
+var winingScoreDisplay = document.querySelector("p span");
+var p1Score = 0;
+var p2Score = 0;
 var winScore = 5;
 var gameOver = false;
 
@@ -14,6 +16,7 @@ p1Click.addEventListener("click", function(){
     if(p1Score === winScore) {
       gameOver = true;
       console.log("gameOver");
+      p1Display.classList.add("winner");
     };
     p1Display.textContent = p1Score;
 
@@ -29,6 +32,19 @@ p2Click.addEventListener("click", function() {
       if(p2Score === winScore){
         gameOver = true;
         console.log("gameOver");
+        p2Display.classList.add("winner");
       };
     };
-  })
+  });
+
+resetClick.addEventListener("click", function() {
+  alert("in");
+  reset();
+});
+
+function reset(){
+  p1Score = 0;
+  p2Score = 0;
+  console.log(p1Score , p2Score);
+
+};
