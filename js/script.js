@@ -38,12 +38,16 @@ p2Click.addEventListener("click", function() {
   });
 
 resetButton.addEventListener("click", function(){
-  	reset();
+    console.log("inside reset")
+    reset();
   });
 
-// function reset(){
-//   p1Score = 0;
-//   p2Score = 0;
-//   console.log(p1Score , p2Score);
-//
-// };
+function reset(){
+  p1Score = 0;
+  p2Score = 0;
+  gameOver = false;
+  p1Display.textContent = 0;
+  p2Display.textContent = 0;
+  p1Display.classList.remove("winner");
+  p2Display.classList.remove("winner");
+};
