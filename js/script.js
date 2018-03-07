@@ -50,3 +50,8 @@ function reset(){
   p1Display.classList.remove("winner");
   p2Display.classList.remove("winner");
 };
+
+winSet.addEventListener("change", function() {
+  winingScoreDisplay.textContent = this.value;
+
+})
