@@ -53,6 +53,6 @@ function reset(){
 
 winSet.addEventListener("change", function() {
   winingScoreDisplay.textContent = this.value;
-  winSet = Number(this.value);
-  reset(); 
+  winScore = Number(this.value);
+  reset();
 })
